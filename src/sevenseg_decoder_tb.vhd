@@ -53,7 +53,7 @@ begin
     test_process : process
     begin
         w_sw <= x"0"; wait for 10 ns;
-            assert w_seg_n = "0000001" report "error on 0" severity failure;
+            assert w_seg_n = "1000000" report "error on 0" severity failure;
         w_sw <= x"1"; wait for 10 ns;
             assert w_seg_n = "1001111" report "error on 1" severity failure;
         w_sw <= x"2"; wait for 10 ns;

@@ -41,7 +41,7 @@ architecture Behavioral of sevenseg_decoder is
 begin
     with i_Hex select 
          o_seg_n <= 
-        "0000001" when "0000", --0 
+        "1000000" when "0000", --0 
         "1001111" when "0001", --1 
         "0010010" when "0010", --2 
         "0000101" when "0011", --3 
