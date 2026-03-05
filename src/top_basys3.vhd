@@ -85,7 +85,7 @@ architecture top_basys3_arch of top_basys3 is
     end component sevenseg_decoder;
 
   -- create wire to connect button to 7SD enable (active-low)
-    signal w_7SD_EN_n : std_logic;
+signal w_7SD_EN_n : std_logic;
   
 begin
 	-- PORT MAPS ----------------------------------------
@@ -94,7 +94,7 @@ begin
 	-----------------------------------------------------	
 	u_decoder : sevenseg_decoder
         port map(
-            i_hex => sw,
+            i_Hex => sw,
             o_seg_n => seg
         );
 	
